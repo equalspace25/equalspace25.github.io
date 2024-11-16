@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Gender Inequality Experiences</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <table width="100%">
+      <tr>
+        <td width="20%" align="left"> 
+          <img src="sliki/logo.png" width="300px">
+        </td>
+        <td width="80%" align="center">
+          <h1>Gender Inequality Reporting Hub</h1>
+          <p>Анонимно сподели со нас полова нееднаквост во фирмата каде што работиш </p>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <main>
+    <form id="reportForm">
+      <label for="experience">Опиши го проблемот:</label>
+      <textarea id="experience" name="experience" rows="5" placeholder="Write about your experience..." required></textarea>
+      
+      <label for="severity">Сериозност на проблемот:</label>
+      <select id="severity" name="severity" required>
+        <option value="" disabled selected>Одбери ниво на сериозност на проблем:</option>
+        <option value="1">1 - Мал проблем</option>
+        <option value="2">2 - Умерен проблем</option>
+        <option value="3">3 - Сериозен проблем</option>
+        <option value="4">4 - Многу сериозен проблем</option>
+        <option value="5">5 - Критичен проблем</option>
+      </select>
+      
+      <button type="submit">Поднеси</button>
+    </form>
+    
+    <section id="reportsSection">
+      <h2 align="center">Други проблеми со полова нееднаквост:</h2>
+      <ul id="reportsList">
+        <!-- Reports will appear here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p align="center">Создадено со ❤️ за промовирање на полова еднаквост.</p>
+  </footer>
+  <script src="script.js">
+  </script>
+</body>
+</html>
+
+
+
